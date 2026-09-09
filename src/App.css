@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f5f7;
+  color: #222;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.counter {
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+}
+
+/* Filtry */
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.filters button {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: white;
+  color: #444;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.filters button:hover {
+  background: #eee;
+}
+
+.filters button.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* Lista filmów */
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Karta filmu */
+
+.movie-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.2s;
+}
+
+.movie-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.movie-card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.movie-card p {
+  color: #222222;
+  margin: 8px 0;
+}
+
+/* Obejrzany */
+
+.movie-card.watched {
+  border: 2px solid #22c55e;
+}
+
+.movie-rate.on {
+  color:  #f2ff00;
+  background-color: #6d7208;
+}
+
+
+.movie-card.watched h2 {
+  color: #15803d;
+}
+
+/* Przycisk */
+
+.watch-button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.watch-button:hover {
+  background: #1d4ed8;
+}
+
+.movie-card.watched .watch-button {
+  background: #22c55e;
+}
+
+.movie-card.watched .watch-button:hover {
+  background: #16a34a;
+}
+
+/* Brak filmów */
+
+.empty {
+  text-align: center;
+  color: #777;
+  font-size: 18px;
+  grid-column: 1 / -1;
+}
