@@ -3,24 +3,24 @@
     "id": 1,
     "title": "Interstellar",
     "year": 2014,
-    "genre": "Sci-Fi"
+    "genre": ["Sci-Fi", "Drama"]
   },
   {
     "id": 2,
     "title": "Inception",
     "year": 2010,
-    "genre": "Sci-Fi"
+    "genre": ["Sci-Fi", "Action", "Thriller"]
   },
   {
     "id": 3,
     "title": "The Dark Knight",
     "year": 2008,
-    "genre": "Action"
+    "genre": ["Action", "Crime", "Drama"]
   },
   {
     "id": 4,
     "title": "Forrest Gump",
     "year": 1994,
-    "genre": "Drama"
+    "genre": ["Drama", "Romance"]
   }
 ]
